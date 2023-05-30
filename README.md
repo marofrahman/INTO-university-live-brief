@@ -9,7 +9,7 @@ Before constructing a suitable list for potential partners, some criteria had to
 
 Based on INTO's preference of receruting international students at scale, KPIs were based on:
 
-1) International Presence
+1) International Presence (IP)
 2) Average Cost of Attendance
 3) Median Household Income
 
