@@ -17,10 +17,10 @@ Based on INTO's preference of receruting international students at scale, KPIs w
 
 Below is a breakdown of the live brief project:
 
-## 1) Prepration
+### 1) Preparation
 
-As a part of this project, the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/download-access-database) and [CollegeScorecard](https://collegescorecard.ed.gov/data/) databases
+As a part of this project the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/download-access-database) and [CollegeScorecard](https://collegescorecard.ed.gov/data/) databases. This stage involed cleaning and reforming the data to ensure it could be used for proper data analysis before joining relevant tables and sets together using Bigquery. A [final spreadsheet](https://github.com/marofrahman/INTO-university-live-brief/files/11599480/FullUni_Data.csv) was constructed which contained the entire data set condensed into one page.
 
+### 2) Analysis
 
-
-
+Test
