@@ -13,6 +13,9 @@ Based on INTO's preference of receruting international students at scale, KPIs w
 2) Average Cost of Attendance
 3) Median Household Income
 
-*please see the glossary in the [business case](https://github.com/marofrahman/INTO-university-live-brief/files/11599335/MohammadRahman_INTO_BusinessCase.pdf) for more details*
+*please see the glossary in the [business case](https://github.com/marofrahman/INTO-university-live-brief/files/11599348/INTO-University_Business_Case.pdf) for more details*
+
+
+
 
 
