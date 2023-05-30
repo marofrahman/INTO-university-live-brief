@@ -1,7 +1,7 @@
 # INTO University Live Brief Project
 #### The goal for this project was to identify and justify a list of the top twenty institutions that INTO University should partner with to increase their reach within the US market. ####
 
-Before constructing a suitable list for potential partners, some criteria had to be met to maximise geographical growth and international presence. Institutions had to be located in a state:
+Before constructing a suitable list for potential partners, criteria had to be met to maximise geographical growth and international presence. Institutions had to be located in a state:
 
 * which is proven to be highly attractive to international students
 * where INTO does not currently have a university partner (you can find the universities INTO has already partnered with here)
@@ -15,6 +15,11 @@ Based on INTO's preference of receruting international students at scale, KPIs w
 
 *please see the glossary in the [business case](https://github.com/marofrahman/INTO-university-live-brief/files/11599348/INTO-University_Business_Case.pdf) for more details*
 
+Below is a breakdown of the live brief project:
+
+## 1) Prepration
+
+As a part of this project, the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/download-access-database) and [CollegeScorecard](https://collegescorecard.ed.gov/data/) databases
 
 
 
