@@ -1,0 +1,70 @@
+WITH Summary AS
+(
+SELECT Year, INSTNM, State, UNITID,
+Foreign_Students / US_Students AS Int_Proportion,
+Foreign_Students AS International,
+Median_HH_income as Median_Income,
+Avg_Cost
+FROM `prism-2023-c1.INTO_Live_Brief_Sandbox.MMR-Wk10-V2`
+),
+
+Segments AS
+(
+SELECT
+  Year, INSTNM, State, UNITID,
+  Int_Proportion,
+  ROUND(Avg_Cost,2) AS Avg_Monetary_Cost,
+
+CASE
+  WHEN Int_Proportion = 0 THEN 10
+  WHEN Int_Proportion BETWEEN 0.00000001 AND 0.009 THEN 9
+  WHEN Int_Proportion BETWEEN 0.01 AND 0.02 THEN 8
+  WHEN Int_Proportion BETWEEN 0.020001 AND 0.04 THEN 7
+  WHEN Int_Proportion BETWEEN 0.040001 AND 0.05 THEN 6
+  WHEN Int_Proportion BETWEEN 0.050001 AND 0.075 THEN 5
+  WHEN Int_Proportion BETWEEN 0.075001 AND 0.1 THEN 4
+  WHEN Int_Proportion BETWEEN 0.10001 AND 0.2 THEN 3
+  WHEN Int_Proportion BETWEEN 0.20001 AND 0.4 THEN 2
+  ELSE 1
+    END AS Prop_Score,
+
+NTILE(10) OVER (ORDER BY ROUND(Avg_Cost,2) DESC) Cost_Score,
+
+CASE
+  WHEN Int_Proportion = 0 THEN 10
+  WHEN Int_Proportion BETWEEN 0.00000001 AND 0.009 THEN 9
+  WHEN Int_Proportion BETWEEN 0.01 AND 0.02 THEN 8
+  WHEN Int_Proportion BETWEEN 0.020001 AND 0.04 THEN 7
+  WHEN Int_Proportion BETWEEN 0.040001 AND 0.05 THEN 6
+  WHEN Int_Proportion BETWEEN 0.050001 AND 0.075 THEN 5
+  WHEN Int_Proportion BETWEEN 0.075001 AND 0.1 THEN 4
+  WHEN Int_Proportion BETWEEN 0.10001 AND 0.2 THEN 3
+  WHEN Int_Proportion BETWEEN 0.20001 AND 0.4 THEN 2
+  ELSE 1
+    END 
+
+*
+
+NTILE(10) OVER (ORDER BY ROUND(Avg_Cost,2) DESC) AS Full_Score
+
+FROM Summary
+),
+
+ranked_data AS
+(
+  SELECT State, INSTNM, UNITID, Prop_Score, Cost_Score, Full_Score, DENSE_RANK() OVER (PARTITION BY State ORDER BY Full_Score DESC) AS rank
+  FROM Segments
+)
+
+SELECT * EXCEPT(rank) FROM ranked_data
+
+WHERE INSTNM NOT LIKE '%Bible%' AND INSTNM NOT LIKE '%Baptist%' AND INSTNM NOT LIKE '%Christian%' AND INSTNM NOT LIKE '%Catholic%'
+
+AND rank <= 20
+
+QUALIFY ROW_NUMBER() OVER (PARTITION BY State ORDER BY Full_Score DESC) = 1
+
+ORDER BY Full_Score DESC limit 20
+
+
+
