@@ -1,0 +1,30 @@
+-- List of top 20
+
+WITH top_20 AS
+(
+  SELECT 'Kentucky State University' AS instnm UNION ALL
+  SELECT 'Northern New Mexico College' AS instnm UNION ALL
+  SELECT 'Yeshiva Gedolah of Greater Detroit' AS instnm UNION ALL
+  SELECT 'University of Phoenix-Texas' AS instnm UNION ALL
+  SELECT 'Concord University' AS instnm UNION ALL
+  SELECT 'Wilmington University' AS instnm UNION ALL
+  SELECT 'Western Governors University' AS instnm UNION ALL
+  SELECT 'University of Phoenix-Hawaii' AS instnm UNION ALL
+  SELECT 'Rhode Island College' AS instnm UNION ALL
+  SELECT 'University of Maine at Augusta' AS instnm UNION ALL
+  SELECT 'Charter Oak State College' AS instnm UNION ALL
+  SELECT 'Madison Area Technical College' AS instnm UNION ALL
+  SELECT 'Granite State College' AS instnm UNION ALL
+  SELECT 'Pittsburg State University' AS instnm UNION ALL
+  SELECT 'Indiana University-Purdue University-Fort Wayne' AS instnm UNION ALL
+  SELECT 'University of Phoenix-California' AS instnm UNION ALL
+  SELECT 'Elizabeth City State University' AS instnm UNION ALL
+  SELECT 'Southern Oregon University' AS instnm UNION ALL
+  SELECT 'Beulah Heights University' AS instnm UNION ALL
+  SELECT 'Southern University at New Orleans' AS instnm
+)
+
+-- Top 20 universities with their data
+
+SELECT * FROM `prism-2023-c1.INTO_Live_Brief_Sandbox.MMR-Wk10-V2`
+WHERE INSTNM IN (SELECT instnm FROM top_20);
