@@ -9,13 +9,13 @@ Before constructing a suitable list for potential partners, criteria had to be m
 
 Based on INTO's preference of receruting international students at scale, KPIs were based on:
 
-1) International Presence (IP)
+1) International Proportion (IP)
 2) Average Cost of Attendance
 3) Median Household Income
 
 *please see the glossary in the [business case](https://github.com/marofrahman/INTO-university-live-brief/files/11599348/INTO-University_Business_Case.pdf) for more details*
 
-Below is a breakdown of the live brief project:
+Below is a breakdown of the live brief project includes the **deliverables**:
 
 ### 1) Preparation
 
@@ -31,10 +31,12 @@ To visualise the analysis, a [Power BI dashboard](https://app.powerbi.com/groups
 
 ### 4) Business Case
 
-Test
+The [business case](https://github.com/marofrahman/INTO-university-live-brief/files/11599771/INTO-University_Business_Case.pdf) document contains the executive summary as well as highlights, recommendations and a conclusion. You can find the chosen list of universities within it.
 
 ### 5) Powerpoint Slides
 
-Test
+As a part of this live brief project, a summary [powerpoint presentation](https://github.com/marofrahman/INTO-university-live-brief/files/11599775/INTO-University_Top5Universities.pptx) focusing on the top 5 universities was submitted to [Peter Thompson](https://www.linkedin.com/in/peterthompson78/?originalSubdomain=uk),  a director at INTO University Partnerships.
 
 ### 6) Video Presentation
+
+In terms of a final submission a video presentation (paired with the powerpoint slides) was delivered to board members of INTO University, explaining our data analysis processes for the candidate partners.
