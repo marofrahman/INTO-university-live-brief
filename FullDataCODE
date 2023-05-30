@@ -1,0 +1,153 @@
+WITH 
+  fixed_2020_data AS (
+    SELECT
+      Unit_Id,
+      Institution_name, 
+      dd.ICLEVEL,
+      dd.STABBR,
+      dd.LOCALE,
+      dd.INSTSIZE,
+      Year,
+      CAST(REPLACE(CASE WHEN Total != '-' THEN Total ELSE '0' END, ',', '') AS INT) AS Total_Students,
+      CAST(REPLACE(CASE WHEN In_state___Number != '-' THEN In_state___Number ELSE '0' END, ',', '') AS INT) AS In_state___Number,
+      CAST(REPLACE(CASE WHEN Out_of_state___Number != '-' THEN Out_of_state___Number ELSE '0' END, ',', '') AS INT) AS Out_of_state___Number,
+      CAST(REPLACE(CASE WHEN Foreign_countries___Number != '-' THEN Foreign_countries___Number ELSE '0' END, ',', '') AS INT) AS Foreign_countries___Number,
+      CAST(REPLACE(CASE WHEN Unknown___Number != '-' THEN Unknown___Number ELSE '0' END, ',', '') AS INT) AS Unknown___Number
+    FROM 
+      `prism-2023-c1.INTO_Live_Brief.Fall_Enrollments_2020` AS f
+    JOIN 
+      `prism-2023-c1.INTO_Live_Brief.Data_Dictionary_2020` AS dd
+    ON 
+      f.Unit_Id = dd.UNITID AND f.Institution_Name = dd.INSTNM
+  ),
+fixed_2019_data AS
+(
+    SELECT
+      Unit_Id,
+      Institution_name, 
+      dd.ICLEVEL,
+      dd.STABBR,
+      dd.LOCALE,
+      dd.INSTSIZE,
+      Year,
+      CAST(REPLACE(CASE WHEN Total != '-' THEN Total ELSE '0' END, ',', '') AS INT) AS Total_Students,
+      CAST(REPLACE(CASE WHEN In_state___Number != '-' THEN In_state___Number ELSE '0' END, ',', '') AS INT) AS In_state___Number,
+      CAST(REPLACE(CASE WHEN Out_of_state___Number != '-' THEN Out_of_state___Number ELSE '0' END, ',', '') AS INT) AS Out_of_state___Number,
+      CAST(REPLACE(CASE WHEN Foreign_countries___Number != '-' THEN Foreign_countries___Number ELSE '0' END, ',', '') AS INT) AS Foreign_countries___Number,
+      CAST(REPLACE(CASE WHEN Unknown___Number != '-' THEN Unknown___Number ELSE '0' END, ',', '') AS INT) AS Unknown___Number
+    FROM 
+      `prism-2023-c1.INTO_Live_Brief.Fall_Enrollments_2019` AS f
+    JOIN 
+      `prism-2023-c1.INTO_Live_Brief.Data_Dictionary_2019` AS dd
+    ON 
+      f.Unit_Id = dd.UNITID AND f.Institution_Name = dd.INSTNM
+  ),
+
+fixed_2018_data AS
+(
+    SELECT
+      Unit_Id,
+      Institution_name, 
+      dd.ICLEVEL,
+      dd.STABBR,
+      dd.LOCALE,
+      dd.INSTSIZE, 
+      Year,
+      CAST(REPLACE(CASE WHEN Total != '-' THEN Total ELSE '0' END, ',', '') AS INT) AS Total_Students,
+      CAST(REPLACE(CASE WHEN In_state___Number != '-' THEN In_state___Number ELSE '0' END, ',', '') AS INT) AS In_state___Number,
+      CAST(REPLACE(CASE WHEN Out_of_state___Number != '-' THEN Out_of_state___Number ELSE '0' END, ',', '') AS INT) AS Out_of_state___Number,
+      CAST(REPLACE(CASE WHEN Foreign_countries___Number != '-' THEN Foreign_countries___Number ELSE '0' END, ',', '') AS INT) AS Foreign_countries___Number,
+      CAST(REPLACE(CASE WHEN Unknown___Number != '-' THEN Unknown___Number ELSE '0' END, ',', '') AS INT) AS Unknown___Number
+    FROM 
+      `prism-2023-c1.INTO_Live_Brief.Fall_Enrollments_2018` AS f
+    JOIN 
+      `prism-2023-c1.INTO_Live_Brief.Data_Dictionary_2018` AS dd
+    ON 
+      f.Unit_Id = dd.UNITID AND f.Institution_Name = dd.INSTNM
+  ),
+  
+fixed_2017_data AS
+(
+    SELECT
+      Unit_Id,
+      Institution_name, 
+      dd.ICLEVEL,
+      dd.STABBR,
+      dd.LOCALE,
+      dd.INSTSIZE,
+      Year,
+      CAST(REPLACE(CASE WHEN Total != '-' THEN Total ELSE '0' END, ',', '') AS INT) AS Total_Students,
+      CAST(REPLACE(CASE WHEN In_state___Number != '-' THEN In_state___Number ELSE '0' END, ',', '') AS INT) AS In_state___Number,
+      CAST(REPLACE(CASE WHEN Out_of_state___Number != '-' THEN Out_of_state___Number ELSE '0' END, ',', '') AS INT) AS Out_of_state___Number,
+      CAST(REPLACE(CASE WHEN Foreign_countries___Number != '-' THEN Foreign_countries___Number ELSE '0' END, ',', '') AS INT) AS Foreign_countries___Number,
+      CAST(REPLACE(CASE WHEN Unknown___Number != '-' THEN Unknown___Number ELSE '0' END, ',', '') AS INT) AS Unknown___Number
+    FROM 
+      `prism-2023-c1.INTO_Live_Brief.Fall_Enrollments_2017` AS f
+    JOIN 
+      `prism-2023-c1.INTO_Live_Brief.Data_Dictionary_2017` AS dd
+    ON 
+      f.Unit_Id = dd.UNITID AND f.Institution_Name = dd.INSTNM
+  ),
+
+fixed_2016_data AS
+(
+    SELECT
+      Unit_Id,
+      Institution_name, 
+      dd.ICLEVEL,
+      dd.STABBR,
+      dd.LOCALE,
+      dd.INSTSIZE,
+      Year,
+      CAST(REPLACE(CASE WHEN Total != '-' THEN Total ELSE '0' END, ',', '') AS INT) AS Total_Students,
+      CAST(REPLACE(CASE WHEN In_state___Number != '-' THEN In_state___Number ELSE '0' END, ',', '') AS INT) AS In_state___Number,
+      CAST(REPLACE(CASE WHEN Out_of_state___Number != '-' THEN Out_of_state___Number ELSE '0' END, ',', '') AS INT) AS Out_of_state___Number,
+      CAST(REPLACE(CASE WHEN Foreign_countries___Number != '-' THEN Foreign_countries___Number ELSE '0' END, ',', '') AS INT) AS Foreign_countries___Number,
+      CAST(REPLACE(CASE WHEN Unknown___Number != '-' THEN Unknown___Number ELSE '0' END, ',', '') AS INT) AS Unknown___Number
+    FROM 
+      `prism-2023-c1.INTO_Live_Brief.Fall_Enrollments_2016` AS f
+    JOIN 
+      `prism-2023-c1.INTO_Live_Brief.Data_Dictionary_2016` AS dd
+    ON 
+      f.Unit_Id = dd.UNITID AND f.Institution_Name = dd.INSTNM
+  ),
+
+all_years AS 
+(
+  SELECT * from fixed_2016_data
+  UNION DISTINCT
+  SELECT * from fixed_2017_data
+  UNION DISTINCT
+  SELECT * from fixed_2018_data
+  UNION DISTINCT
+  SELECT * from fixed_2019_data
+  UNION DISTINCT
+  SELECT * from fixed_2020_data
+),
+
+merged_data AS
+(
+SELECT 
+  Unit_Id UNITID,
+  Institution_name INSTNM,
+  STABBR As State,
+  Year,
+  ICLEVEL,
+  Total_Students,
+  (Total_Students - Unknown___Number) AS Known_Students,
+  In_state___Number,
+  Out_of_state___Number,
+  Foreign_countries___Number,
+  (In_state___Number + Out_of_state___Number) AS US_Students,
+  Unknown___Number,
+  LOCALE,
+  INSTSIZE
+FROM 
+  all_years
+WHERE
+  ICLEVEL = 1
+ORDER BY 
+  Year ASC, Total_Students DESC
+)
+
+SELECT * from merged_data WHERE LOCALE = 11 OR LOCALE = 12 OR LOCALE = 21 OR LOCALE = 22;
