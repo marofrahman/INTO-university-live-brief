@@ -24,3 +24,17 @@ As a part of this project the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/dow
 ### 2) Analysis
 
 The majority of the analysis was performed using a combination of Excel, SQL and GPT. [BigQuery code](https://console.cloud.google.com/bigquery?authuser=1&project=prism-2023-c1&ws=!1m5!1m4!1m3!1sprism-2023-c1!2sbquxjob_635e0d71_18867cf3d8b!3sUS) ultimately built a table that displayed the top 20 suitable universities to partner with.
+
+### 3) Visualisations
+
+To visualise the analysis, a [Power BI dashboard](https://app.powerbi.com/groups/d4794dbe-058d-46e0-a484-5e379b4d31a7/reports/06c2c74e-0121-42bc-8f03-8056297ccb8c/ReportSection?experience=power-bi) was made. Elements of comparison between KPIs and changes overtime were displayed to gather a sense of attendance costs VS household incomes as well as the international presence of these chosen universities. 
+
+### 4) Business Case
+
+Test
+
+### 5) Powerpoint Slides
+
+Test
+
+### 6) Video Presentation
