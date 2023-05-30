@@ -23,4 +23,4 @@ As a part of this project the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/dow
 
 ### 2) Analysis
 
-Test
+The majority of the analysis was performed using a combination of Excel, SQL and GPT. [Bigquery code](https://console.cloud.google.com/bigquery?authuser=1&project=prism-2023-c1&ws=!1m5!1m4!1m3!1sprism-2023-c1!2sbquxjob_635e0d71_18867cf3d8b!3sUS) ultimately built a table that displayed the top 20 suitable universities to partner with.
