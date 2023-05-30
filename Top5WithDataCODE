@@ -1,0 +1,11 @@
+WITH top_5 AS
+(
+  SELECT 'Kentucky State University' AS instnm UNION ALL
+  SELECT 'Northern New Mexico College' AS instnm UNION ALL
+  SELECT 'Yeshiva Gedolah of Greater Detroit' AS instnm UNION ALL
+  SELECT 'University of Phoenix-Texas' AS instnm UNION ALL
+  SELECT 'Concord University' AS instnm
+)
+
+SELECT * FROM `prism-2023-c1.INTO_Live_Brief_Sandbox.MMR-Wk10-V2`
+WHERE INSTNM IN (SELECT instnm FROM top_5);
