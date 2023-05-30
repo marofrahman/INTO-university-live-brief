@@ -19,8 +19,8 @@ Below is a breakdown of the live brief project:
 
 ### 1) Preparation
 
-As a part of this project the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/download-access-database) and [CollegeScorecard](https://collegescorecard.ed.gov/data/) databases. This stage involed cleaning and reforming the data to ensure it could be used for proper data analysis before joining relevant tables and sets together using Bigquery. A [final spreadsheet](https://github.com/marofrahman/INTO-university-live-brief/files/11599480/FullUni_Data.csv) was constructed which contained the entire data set condensed into one page.
+As a part of this project the [IPEDS](https://nces.ed.gov/ipeds/use-the-data/download-access-database) and [CollegeScorecard](https://collegescorecard.ed.gov/data/) databases. This stage involed cleaning and reforming the data to ensure it could be used for proper data analysis before joining relevant tables and sets together using BigQuery. A [final spreadsheet](https://github.com/marofrahman/INTO-university-live-brief/files/11599480/FullUni_Data.csv) was constructed which contained the entire data set condensed into one page.
 
 ### 2) Analysis
 
-The majority of the analysis was performed using a combination of Excel, SQL and GPT. [Bigquery code](https://console.cloud.google.com/bigquery?authuser=1&project=prism-2023-c1&ws=!1m5!1m4!1m3!1sprism-2023-c1!2sbquxjob_635e0d71_18867cf3d8b!3sUS) ultimately built a table that displayed the top 20 suitable universities to partner with.
+The majority of the analysis was performed using a combination of Excel, SQL and GPT. [BigQuery code](https://console.cloud.google.com/bigquery?authuser=1&project=prism-2023-c1&ws=!1m5!1m4!1m3!1sprism-2023-c1!2sbquxjob_635e0d71_18867cf3d8b!3sUS) ultimately built a table that displayed the top 20 suitable universities to partner with.
