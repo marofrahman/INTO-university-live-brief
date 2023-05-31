@@ -39,4 +39,4 @@ As a part of this live brief project, a summary [powerpoint presentation](https:
 
 ### 6) Video Presentation
 
-In terms of a final submission a video presentation (paired with the powerpoint slides) was delivered to board members of INTO University, explaining our data analysis processes for the candidate partners.
+In terms of a final submission a [video presentation](https://drive.google.com/file/d/1tyQLBuUWs5XaEu3SyD0FMko1Ldh7PTv0/view?usp=sharing) (paired with the powerpoint slides) was delivered to board members of INTO University, explaining our data analysis processes for the candidate partners.
